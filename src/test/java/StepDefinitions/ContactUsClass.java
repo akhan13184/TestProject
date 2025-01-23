@@ -86,7 +86,7 @@ public class ContactUsClass {
  
 
 	 @After
-	 public void doSomethingAfter(Scenario scenario) {
+	 public void quitDriver(Scenario scenario) {
 		  driver.quit();
 	 }
 	 
