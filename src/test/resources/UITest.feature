@@ -4,12 +4,12 @@ Feature: Testing contact us page
   Scenario: Filling all the details in ‘Contact Us’ section (except clicking on ‘Submit’ button)
     Given I log into "https://www.mortgageadvicebureau.com/contact-us"
     And I swipe down
-    Then I put first name as "Ammar"
-    And I put last name as "Khan"
-    And I put email address as "ammar88@hotmail.co.uk"
+    Then I put first name as "John"
+    And I put last name as "McLeod"
+    And I put email address as "JMcleod@hotmail.co.uk"
     And I swipe down
-    And I put Post Code as "LE2 2BJ"
-    And I put mobile number as "07868155174"
-    And I leave a message as "This is for a interview"
+    And I put Post Code as "LE3 4AB"
+    And I put mobile number as "07979441277"
+    And I leave a message as "This is for an interview"
     And I select marking email options
     
