@@ -10,9 +10,9 @@ public class RestAssuredSteps {
 	
     private Response response;
 
-    @Given("a REST API endpoint")
-    public void setApiEndpoint() {
-        RestAssured.baseURI = "https://demoqa.com/Account/v1/User/";
+    @Given("a REST API endpoint of \"([^\"]*)\"")
+    public void setApiEndpoint(String URL) {
+        RestAssured.baseURI = URL;
     }
 
     @When("I send a GET request of \"([^\"]*)\"")

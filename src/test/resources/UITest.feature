@@ -1,8 +1,7 @@
-@tag
 Feature: Testing contact us page
- Testing contact us page without submitting
-
-  Scenario: Title of your scenario outline
+ Go to the website https://www.mortgageadvicebureau.com/contact-us and fill all the details in ‘Contact Us’ section (except clicking on ‘Submit’ button)
+ 
+  Scenario: Filling all the details in ‘Contact Us’ section (except clicking on ‘Submit’ button)
     Given I log into "https://www.mortgageadvicebureau.com/contact-us"
     And I swipe down
     Then I put first name as "Ammar"

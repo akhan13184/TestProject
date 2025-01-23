@@ -8,7 +8,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @cucumber.api.CucumberOptions(
     features = "src/test/resources/UITest.feature", // folder name
-    glue = "StepDefinitions" // package name
+    glue = "StepDefinitions", // package name
+    plugin = { "pretty", "html:target/cucumber-reports" },
+	monochrome = true
 )
 public class TestRunner {
 	
